@@ -1,14 +1,47 @@
 
-/* 검색 영역 */
-.compareSearchBlock{
-  margin : 30px 0 30px 0;
-  text-align: right;
+
+
+
+/* 모달 영역 */
+#academySearchModal{
+    display: none;
 }
 
-.compareSearchBlock input{
-    display : inline-block;
-    margin : 0 0 0 5px;
-    
+#academySearchModal{
+
+width: 400px;
+height: 500px;
+position: absolute;
+top: 50%;
+left: 50%;
+margin: -250px 0 0 -250px;
+background-color: #fff;
+z-index: 2;
+}
+
+.backon{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #00000054;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+.close{
+  width: 15px;
+  height: 15px;
+  border : 1px solid lightgrey;
+  background-color : lightgray;
+  position:absolute;
+  top:-25px;
+  right: 0;
+  cursor:pointer;
+  color: gray;
+  text-align: center;
 }
 
 /* 비교 영역 */
@@ -36,4 +69,57 @@
     height: 100%;
     width: 0.3px;
     border : 0.5px solid lightgray;
+}
+
+
+/* SHOW HIDE 영역 */
+.compareSearchClick1,
+.compareSearchClick2 {
+   
+    max-width : 1300px;
+    height: 700px;
+    text-align: center;
+    cursor : pointer; 
+
+}
+
+.compareSearchClick1 > div, 
+.compareSearchClick2 > div {
+    position: absolute;
+    /*left: 50%;*/ 
+    top: 50%; 
+    transform: translate(-50%,-50%);
+    display: inline-block;
+   /*  border : 1px solid gray; 
+    border-radius: 10%; */
+    width : 80px;
+    height: 50px;
+    
+}
+
+.compareSearchClick1 > div > a,
+.compareSearchClick2 > div > a{
+    position: absolute;
+    /*left: 50%;*/
+    top : 50%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+ 
+    
+}
+
+
+.compareSearchClick1:hover, 
+.compareSearchClick2:hover {
+    background-color: lightgray;
+}
+
+
+.compareNum1 {
+ display: none;
+}
+
+
+.compareNum2 {
+ display : none;
 }
