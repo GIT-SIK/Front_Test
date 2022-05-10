@@ -1,0 +1,39 @@
+
+/* 검색 영역 */
+.compareSearchBlock{
+  margin : 30px 0 30px 0;
+  text-align: right;
+}
+
+.compareSearchBlock input{
+    display : inline-block;
+    margin : 0 0 0 5px;
+    
+}
+
+/* 비교 영역 */
+.academyCompareBlock {
+    max-width: 1300px;
+    display : grid;
+    grid-template-columns: 1fr 50px 1fr;
+}
+
+/* 비교 대상 영역 */
+.compareNum1, .compareNum2 {
+    max-width : 1300px;
+    height: 800px;
+    display : grid;
+    grid-template-rows:  1fr 1fr 2fr;
+}
+
+
+/* 비교 영역 센터라인 영역 : 고정*/ 
+.compareCenterBlock {
+    text-align: center;
+}
+.compareCenterBlock > div {
+    display: inline-block;
+    height: 100%;
+    width: 0.3px;
+    border : 0.5px solid lightgray;
+}
