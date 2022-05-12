@@ -4,7 +4,6 @@
 }
 
 #academySearchModal {
-
     width: 400px;
     height: 500px;
     position: absolute;
@@ -14,8 +13,6 @@
     background-color: #fff;
     z-index: 2;
 }
-
-
 
 #academySearchInput input[type=text] {
     height: 18px;
@@ -31,8 +28,6 @@
     text-align: center;
     border-bottom: 1px solid lightgray;
 }
-
-
 
 
 .backon {
