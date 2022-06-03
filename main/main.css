@@ -1,0 +1,27 @@
+.top div:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+.top div:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.top div:nth-child(3) {
+    width: 100px;
+    height: 100px;
+    background-color: darkblue;
+}
+
+.top div:nth-child(4) {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+}
+
+.top div {
+    position: absolute;
+}
