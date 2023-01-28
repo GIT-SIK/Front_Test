@@ -19,16 +19,37 @@
     <script src="https://masonry.desandro.com/masonry.pkgd.min.js"></script>
     <script>
         $(document).ready(function() {
-            for( var x = 0; x< 100; x++){
-                $('<div></div>').addClass('box').css({
-                    width : 160, /* 타일 내 블록 width 크기 */
-                    height : Math.floor(Math.random() * 100) + 50 
-                }).appendTo('body');         
-            }
-            $('body').masonry({
-                columnWidth : 170 /* 타일 width 크기 */ /* 블록 크기보다 최소 10 차이나야함 */
+            
+            var masonryPrint = function() {
+                
+                for( var x = 0; x< 50; x++){
+                    $('<div></div>').addClass('box').css({
+                        width : 70, /* 타일 내 블록 width 크기 */
+                        height : Math.floor(Math.random() * 70) + 30
+                    }).appendTo('body');         
+                }
+                $('body').masonry({
+                    columnWidth : 80 /* 타일 width 크기 */ /* 블록 크기보다 최소 10 차이나야함 */
+                });
+            };
+
+            masonryPrint();
+            
+            /* 무한 스크롤 설정 */
+            /* 타일 Test 필요 */
+            $(window).scroll(function() {
+                var scrollHeight = $(window).scrollTop() + $(window).height();
+                var documentHeight = $(document).height();
+
+                if(scrollHeight == documentHeight){
+                    masonryPrint();
+                };
+
+
             });
+
         });
+
 
     </script>
     
