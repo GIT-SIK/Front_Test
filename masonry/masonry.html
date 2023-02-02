@@ -10,8 +10,10 @@
             margin: 0; padding: 0;
         }
         .box {
-            background: black;
+            border : black 1px solid;
+            background:white;
             margin: 5px;
+            overflow : hidden;
         }
     </style>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
@@ -23,13 +25,13 @@
             var masonryPrint = function() {
                 
                 for( var x = 0; x< 50; x++){
-                    $('<div></div>').addClass('box').css({
-                        width : 70, /* 타일 내 블록 width 크기 */
+                    $('<div>' + Math.random() + '</div>').addClass('box').css({
+                        width : 100, /* 타일 내 블록 width 크기 */
                         height : Math.floor(Math.random() * 70) + 30
                     }).appendTo('body');         
                 }
                 $('body').masonry({
-                    columnWidth : 80 /* 타일 width 크기 */ /* 블록 크기보다 최소 10 차이나야함 */
+                    columnWidth : 112 /* 타일 width 크기 */ /* 블록 크기보다 최소 10 차이나야함 */
                 });
             };
 
