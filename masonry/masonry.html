@@ -14,6 +14,7 @@
             background:white;
             margin: 5px;
             overflow : hidden;
+            
         }
     </style>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
@@ -31,11 +32,12 @@
                     }).appendTo('body');         
                 }
                 $('body').masonry({
-                    columnWidth : 112 /* 타일 width 크기 */ /* 블록 크기보다 최소 10 차이나야함 */
+                    columnWidth : 112, /* 타일 width 크기 */ /* 블록 크기보다 최소 10 차이나야함 */
+                    itemSelector: '.box'
                 });
             };
 
-            masonryPrint();
+             masonryPrint(); 
             
             /* 무한 스크롤 설정 */
             /* 타일 Test 필요 */
