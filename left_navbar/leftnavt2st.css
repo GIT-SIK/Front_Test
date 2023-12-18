@@ -1,0 +1,32 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.cls-flex {}
+
+.cls-flex #main {
+    display: inline-block;
+}
+
+#sidebar {
+    display: inline-block;
+    width: 200px;
+    height: 100%;
+    left: 0;
+    top: 100px;
+    background: gray;
+    font-size: 14px;
+    z-index: 100;
+    margin-left: -200px;
+    transform: translate3d(-200px, 0, 0);
+    /* transition: all 0.2s; */
+
+}
+
+#sidebar.sideon {
+    background: gray;
+    transform: translate3d(0, 0, 0);
+    margin-left: 0px;
+    /* transition: all 0.2s; */
+}
