@@ -1,8 +1,3 @@
-
-
-
-
-
 /* 수정 사항 */
 
 /* 모달 영역 */
@@ -11,7 +6,7 @@
     display: none;
 }
 
-.modal_login {
+.modal-login {
     display: none;
 }
 
@@ -28,7 +23,7 @@
 }
 
 
-.close {
+.img-close {
     width: 40px;
     height: 40px;
     background-color: gray;
@@ -39,19 +34,19 @@
 
 }
 
-.modal_login {
-    width: 500px;
-    height: 300px;
+.modal-login {
+    width: 400px;
+    height: 200px;
     position: fixed;
-    top: 50%;
+    top: 65%;
     left: 50%;
     margin: -250px 0 0 -250px;
     background-color: #fff;
     z-index: 2;
 }
 
-.login_tt {
-    width: 460px;
+.login-tt {
+    width: 360px;
     height: 40px;
     background-color: gray;
     position: absolute;
@@ -59,36 +54,36 @@
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
+}
+
+.login-tt div {
+    position: relative;
+    left : 50%;
 
 }
 
-.login_tt>div {
+.login-tt>div {
     vertical-align: middle;
     font-size: 1.1em;
 }
 
-
-
-
-
-
 /* 폼 내 영역 */ 
 
 
-#box_id,
-#box_pw{
-    margin: 0 0 20px 0;
-    padding: 7px;
-    width: 350px;
-    height: 37px;
+#box-id,
+#box-pw{
+    vertical-align: center;
+    margin: 0 0 15px 0;
+    padding: 5px;
+    width: 250px;
+    height: 28px;
     border: 1px solid gray;
     border-radius: 5px;
 
 }
 
-.modal_login #bt_login {
-    width: 365px;
+.modal-login #bt-login {
+    width: 265px;
     height: 37px;
     margin: 0;
     padding: 0;
@@ -102,7 +97,7 @@
 }
 
 
-.close img {
+.img-close img {
     width: 32px;
     height: 32px;
     position: absolute;
@@ -115,18 +110,18 @@
 }
 
 
-#form_login {
-    margin-top: 10%;
-    margin-left: 13%;
+#form-login {
+    padding-top: 20px;
+    text-align: center;
     height: 100%;
     max-width: 100%;
 }
 
-#bt_login:active {
+#bt-login:active {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .4),
         inset 2px 2px 3px rgba(0, 0, 0, .2);
 }
 
-#bt_login:hover {
+#bt-login:hover {
     background-color: lightslategray;
 }

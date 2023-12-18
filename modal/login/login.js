@@ -1,6 +1,6 @@
 $(document).ready(function ($) {
 
-    $("#bt_login_link").on("click", function (event) {
+    $("#bt-loginlink").on("click", function (event) {
         view_login_modal(true);
     });
 
@@ -12,7 +12,7 @@ $(document).ready(function ($) {
     });
 
 
-    $(".close img").on("click", function (event) {
+    $(".img-close img").on("click", function (event) {
         view_login_modal(false);
 
     });
@@ -24,10 +24,10 @@ $(document).ready(function ($) {
 /* Signup 모달 */
 function view_login_modal(bool) {
     if (bool == true) {
-        $(".modal_login").show();
+        $(".modal-login").show();
         $(".backon").show();
     } else {
-        $(".modal_login").hide();
+        $(".modal-login").hide();
         $(".backon").hide();
     }
 
