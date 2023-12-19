@@ -16,9 +16,9 @@ function promise_1() {
     });
 }
 
-// promise_2 
+// promise_2 (resolve)
 function promise_2() {
-    console.log("-- Promise 2 --");
+    console.log("-- Promise 2 (resolve) --");
     function promise_t1() {
         return new Promise(function (resolve, reject) {
             let num = 10;
@@ -31,6 +31,16 @@ function promise_2() {
     });
 }
 
-// promise_3 
+// promise_3 (reject)
 function promise_3() {
+    console.log("-- Promise 3 (reject) --");
+    function promise_t1() {
+        return new Promise(function (resolve, reject) {
+            reject(new Error("failed"));
+        });
+    }
+
+    promise_t1().then().catch(function (e) {
+        console.log(e);
+    });
 }
