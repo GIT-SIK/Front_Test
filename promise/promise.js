@@ -44,3 +44,25 @@ function promise_3() {
         console.log(e);
     });
 }
+
+// promise_4 (다수 promise)
+function promise_4() {
+    console.log("-- Promise 4 (다수) --");
+    new Promise(function (resolve, reject) {
+        setTimeout(function () {
+            resolve(0);
+        }, 1000);
+    })
+        .then(function (result) {
+            console.log(result); // 0
+            return result + 10;
+        })
+        .then(function (result) {
+            console.log(result); // 10
+            return result + 10;
+        })
+        .then(function (result) {
+            console.log(result); // 20
+        });
+
+}
