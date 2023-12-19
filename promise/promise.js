@@ -45,9 +45,9 @@ function promise_3() {
     });
 }
 
-// promise_4 (다수 promise)
+// promise_4 (promise return)
 function promise_4() {
-    console.log("-- Promise 4 (다수) --");
+    console.log("-- Promise 4 (promise return) --");
     new Promise(function (resolve, reject) {
         setTimeout(function () {
             resolve(0);
