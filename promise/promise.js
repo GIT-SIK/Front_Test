@@ -98,3 +98,23 @@ function callback_5() {
     });
 
 }
+
+/* Promise 병렬 처리 */
+function promise_parallel() {
+    const promise1 = new Promise((resolve, reject) => {
+        setTimeout(resolve, 100, 'a');
+    });
+
+    const promise2 = new Promise((resolve, reject) => {
+        setTimeout(resolve, 100, 'b');
+    });
+
+    const promise3 = new Promise((resolve, reject) => {
+        setTimeout(resolve, 100, 'c');
+    });
+
+    Promise.all([promise1, promise2, promise3]).then((val) => {
+        console.log(val);
+    })
+
+}
