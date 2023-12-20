@@ -4,18 +4,55 @@
 <head>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="promise.js"></script>
+    <style>
+        table {
+            border: 1px solid
+        }
+    </style>
 </head>
 
 <body>
-    <input type="button" value="Promise 1" onclick="promise_1()" /> <br>
-    <input type="button" value="Promise 2 (resolve)" onclick="promise_2()" /> <br>
-    <input type="button" value="Promise 3 (reject)" onclick="promise_3()" /> <br>
-    <input type="button" value="Promise 4" onclick="promise_4()" /> <br>
-    <input type="button" value="Promise 5" onclick="promise_5()" disabled /> <br>
-    <input type="button" value="Promise 6" onclick="promise_6()" disabled /> <br>
-    <input type="button" value="Promise 7" onclick="promise_7()" disabled /> <br>
-    <input type="button" value="Promise 8" onclick="promise_8()" disabled /> <br>
+    <table>
+        <tr>
+            <th>설명</th>
+            <th>버튼</th>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> <input type="button" value="Promise 1" onclick="promise_1()" /></td>
+        </tr>
+        <tr>
+            <td> resolve</td>
+            <td> <input type="button" value="Promise 2 (resolve)" onclick="promise_2()" /></td>
+        </tr>
+        <tr>
+            <td> reject</td>
+            <td> <input type="button" value="Promise 3 (reject)" onclick="promise_3()" /></td>
+        </tr>
+        <tr>
+            <td> return</td>
+            <td> <input type="button" value="Promise 4 (return) " onclick="promise_4()" /></td>
+        </tr>
+        <tr>
+            <td> promise : callback 차이</td>
+            <td> <input type="button" value="Promise 5" onclick="promise_5()" /> <input type="button" value="callback_5"
+                    onclick="callback_5()" /></td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> <input type="button" value="Promise 6" onclick="promise_6()" disabled /></td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> <input type="button" value="Promise 7" onclick="promise_7()" disabled /></td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> <input type="button" value="Promise 8" onclick="promise_8()" disabled /></td>
+        </tr>
+    </table>
 
+    <input type="button" value="Console CLEAR" onclick="_clear()" />
 </body>
 
 </html>

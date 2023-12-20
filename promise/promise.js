@@ -1,3 +1,7 @@
+function _clear() {
+    console.clear();
+}
+
 // promise_1
 function promise_1() {
     console.log("-- Promise 1 --");
@@ -64,5 +68,33 @@ function promise_4() {
         .then(function (result) {
             console.log(result); // 20
         });
+
+}
+
+/* callback : promise 차이점 */
+function promise_5() {
+    function promise_add(a) {
+        return new Promise(resolve => setTimeout(() => resolve(a + 15), 100));
+    }
+
+    promise_add(15)
+        .then(promise_add)
+        .then(promise_add)
+        .then(console.log);
+}
+
+function callback_5() {
+    function add(a, callback) {
+        setTimeout(() => callback(a + 15), 100);
+    }
+
+
+    add(15, res => {
+        add(res, res => {
+            add(res, res => {
+                console.log(res);
+            });
+        });
+    });
 
 }
