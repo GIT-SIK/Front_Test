@@ -118,3 +118,20 @@ function promise_parallel() {
     })
 
 }
+
+/* delay Promise (t)*/
+function promise_delay() {
+    function delay(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms))
+    };
+
+    const delay2 = (ms) => { return new Promise(resolve => setTimeout(resolve, ms)) };
+
+    delay(1500).then(() => console.log('f() 1500ms'));
+    delay2(1000).then(() => console.log('()=> 1000ms'));
+
+    /*
+    "=> 1000ms
+    f 1500ms"
+    */
+} 
