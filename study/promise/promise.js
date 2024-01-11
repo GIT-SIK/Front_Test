@@ -134,4 +134,16 @@ function promise_delay() {
     "=> 1000ms
     f 1500ms"
     */
-} 
+}
+/*  fetch */
+function getData(URL) {
+    return fetch(URL)
+        .then(function (response) { return response.json() })
+        .then(function (json) { return json })
+        .catch((error) => console.log("error"));
+}
+
+/* fetch promise*/
+function promise_fetch_1() {
+    getData("http://ip.jsontest.com/").then((result) => console.log(result));
+}
