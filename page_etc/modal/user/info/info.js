@@ -39,7 +39,7 @@ $(document).ready(function ($) {
         rowHeaders: ['rowNum'],
         pageOptions: {
             useClient: true,
-            perPage: 5
+            perPage: 10
         }
     });
 
