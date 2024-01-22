@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         el: document.getElementById('grid'),
         data: data,
         rowHeaders: ['checkbox'],
+        bodyHeight: 500,
         treeColumnOptions: {
             name: 'id',
             useCascadingCheckbox: true
