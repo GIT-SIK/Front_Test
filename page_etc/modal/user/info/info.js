@@ -43,24 +43,15 @@ $(document).ready(function ($) {
         }
     });
 
-
-    /* 페이지 테스트 영역 */
-    // const appendBtn = document.getElementById('appendBtn');
-    // const prependBtn = document.getElementById('prependBtn');
-
-    // const appendedData = {
-    //     id: 359999,
-    //     name: 'INPUT',
-    // };
-
-    // appendBtn.addEventListener('click', () => {
-    //     grid.appendRow(appendedData);
-    // });
-
-    // prependBtn.addEventListener('click', () => {
-    //     grid.prependRow(appendedData);
-    // });
-
+    /* row event */
+    grid.on('dblclick', (e) => {
+        let { rowKey } = e;
+        if (rowKey === 0) {
+            e.stop();
+            return;
+        }
+        console.log(grid.getValue(rowKey, "id"));
+    });
 
 });
 
