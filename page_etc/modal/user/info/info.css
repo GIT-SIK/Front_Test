@@ -12,7 +12,7 @@
 
 .info-modal {
     width: var(--infoModal-width);
-    height: 687px;
+    height: 716px;
     position: fixed;
     top: 40%;
     transform: translate(-50%, -50%);
@@ -44,8 +44,7 @@
     border-color: lightgray;
 }
 
-
-#infoGrid {
+#infoProduct div:nth-child() #infoGrid {
     width: var(--infoModal-width);
     padding: 0 20px 0 20px;
 }

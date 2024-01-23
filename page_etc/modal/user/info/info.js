@@ -1,5 +1,5 @@
 /* 데이터 테스트 */
-import { gridData } from './dummy.js';
+import { infoData } from './dummy.js';
 
 /* 실행 영역 */
 $(document).ready(function ($) {
@@ -23,17 +23,17 @@ $(document).ready(function ($) {
     /* Grid 영역 */
     var grid = new tui.Grid({
         el: document.getElementById('infoGrid'),
-        data: gridData,
+        data: infoData,
         scrollX: false,
         scrollY: false,
         columns: [
             {
-                title: 'Id',
-                name: 'id'
+                header: '등록일자',
+                name: 'registrationDT'
             },
             {
-                title: 'Name',
-                name: 'name'
+                header: '개수',
+                name: 'productQty'
             }
         ],
         rowHeaders: ['rowNum'],
@@ -50,7 +50,7 @@ $(document).ready(function ($) {
             e.stop();
             return;
         }
-        console.log(grid.getValue(rowKey, "id"));
+        console.log(grid.getValue(rowKey, "registrationDT")); /* colname 설정할 것 */
     });
 
 });
@@ -59,7 +59,7 @@ $(document).ready(function ($) {
 
 /* 모달 뷰 */
 function viewInfoModal(bool) {
-    if (bool == true) {
+    if (bool) {
         $(".info-modal").show();
         $(".backon").show();
     } else {

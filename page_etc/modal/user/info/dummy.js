@@ -1,62 +1,62 @@
-export var gridData = [
+export var infoData = [
     {
-        id: 350000,
-        name: 'A'
+        registrationDT: 350000,
+        productQty: 'A'
     },
     {
-        id: 350001,
-        name: 'B'
+        registrationDT: 350001,
+        productQty: 'B'
     },
     {
-        id: 350002,
-        name: 'C'
+        registrationDT: 350002,
+        productQty: 'C'
     },
     {
-        id: 350003,
-        name: 'D'
+        registrationDT: 350003,
+        productQty: 'D'
     },
     {
-        id: 350004,
-        name: 'E'
+        registrationDT: 350004,
+        productQty: 'E'
     },
     {
-        id: 350005,
-        name: 'F'
+        registrationDT: 350005,
+        productQty: 'F'
     },
     {
-        id: 350006,
-        name: 'G'
+        registrationDT: 350006,
+        productQty: 'G'
     },
     {
-        id: 350007,
-        name: 'H'
+        registrationDT: 350007,
+        productQty: 'H'
     },
     {
-        id: 350008,
-        name: 'I'
+        registrationDT: 350008,
+        productQty: 'I'
     },
     {
-        id: 350009,
-        name: 'J'
+        registrationDT: 350009,
+        productQty: 'J'
     },
     {
-        id: 350010,
-        name: 'K'
+        registrationDT: 350010,
+        productQty: 'K'
     },
     {
-        id: 350011,
-        name: 'L'
+        registrationDT: 350011,
+        productQty: 'L'
     },
     {
-        id: 350012,
-        name: 'M'
+        registrationDT: 350012,
+        productQty: 'M'
     },
     {
-        id: 350013,
-        name: 'N'
+        registrationDT: 350013,
+        productQty: 'N'
     },
     {
-        id: 350014,
-        name: 'O'
+        registrationDT: 350014,
+        productQty: 'O'
     }
 ]
