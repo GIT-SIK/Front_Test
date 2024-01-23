@@ -25,7 +25,7 @@ $(document).ready(function ($) {
         el: document.getElementById('infoGrid'),
         data: gridData,
         scrollX: false,
-        scrollY: true,
+        scrollY: false,
         columns: [
             {
                 title: 'Id',
