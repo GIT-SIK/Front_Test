@@ -1,12 +1,16 @@
 /* 데이터 테스트 */
 import { infoData } from './dummy.js';
 
+/* grid 전역 변수 */
+let grid;
+
 /* 실행 영역 */
 $(document).ready(function ($) {
 
     /* 모달 Open Close 영역 */
     $("#infoModalOpenBtn").on("click", function (event) {
         viewInfoModal(true);
+        grid.refreshLayout();
     });
 
     $("body").on("click", function (event) {
@@ -21,11 +25,12 @@ $(document).ready(function ($) {
 
 
     /* Grid 영역 */
-    var grid = new tui.Grid({
+    grid = new tui.Grid({
         el: document.getElementById('infoGrid'),
         data: infoData,
         scrollX: false,
         scrollY: false,
+        bodyHeight: 400,
         columns: [
             {
                 header: '등록일자',
@@ -42,6 +47,7 @@ $(document).ready(function ($) {
             perPage: 10
         }
     });
+
 
     /* row event */
     grid.on('dblclick', (e) => {
