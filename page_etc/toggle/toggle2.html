@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>toggle</title>
+</head>
+
+<body>
+    <h3> 모션 적용 방식 </h3>
+
+
+    <script>
+        window.addEventListener('DOMContentLoaded', event => {
+            const toggle = document.body.querySelector('#buttonToggle2');
+            if (toggle) {
+                toggle.addEventListener('click', event => {
+                    $("#input2").toggleClass("toggle2");
+                });
+            }
+        });
+    </script>
+
+    <style>
+        #input2 {
+            transform: translateY(-25px);
+            transition: all 0.2s;
+            position: relative;
+            z-index: 1;
+        }
+
+        #input2.toggle2 {
+            transform: translateY(0px);
+            transition: all 0.2s;
+            position: relative;
+            z-index: 1;
+        }
+
+        div {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+
+    <div style="background-color: gray;">
+        <button id="buttonToggle2">토글2</button>
+    </div>
+    <input type="search" id="input2">
+</body>
+
+</html>

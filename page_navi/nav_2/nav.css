@@ -1,0 +1,48 @@
+header {
+    display: flex;
+}
+
+/* 메뉴 전체 틀 */
+nav {
+    width: 100%;
+    /* 영역 전체 화면 설정 */
+    min-width: 520px;
+    /* 영역 최소화 설정 */
+}
+
+/* 메뉴 좌 우*/
+nav div {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+nav #nLeft {
+    float: left;
+}
+
+nav #nRight {
+    float: right;
+}
+
+/* 메뉴 */
+nav ul {
+    font-size: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+/* 로고 */
+#logo img {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+
+}

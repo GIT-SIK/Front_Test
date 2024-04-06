@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>CSS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <h3> CSS + JS 표시, 숨김 방식 </h3>
+    <script>
+        window.addEventListener('DOMContentLoaded', event => {
+            const toggle = document.body.querySelector('#buttonToggle');
+            if (toggle) {
+                toggle.addEventListener('click', event => {
+                    $("#input").toggleClass("toggle");
+                });
+            }
+        });
+    </script>
+
+    <style>
+        #input {
+            display: none;
+        }
+
+        #input.toggle {
+            display: block;
+        }
+    </style>
+
+    <button id="buttonToggle">토글</button>
+    <input type="search" id="input">
+
+
+    <br>
+    <br>
+    <h3> CSS 방식 </h3>
+
+    <style>
+        #inputHvr {
+            display: none;
+        }
+
+        #hvr:hover #inputHvr {
+            display: block;
+        }
+    </style>
+
+    <div id="hvr">
+        HOVER
+        <input type="search" id="inputHvr">
+    </div>
+
+
+</body>
+
+</html>
