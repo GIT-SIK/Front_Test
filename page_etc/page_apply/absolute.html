@@ -21,23 +21,53 @@
         });
     </script>
     <style>
+        body {
+            margin: 0;
+        }
+
+        .navTop {
+            margin: 0;
+            background-color: lightgray;
+        }
+
         #search-bg {
             margin-top: 5px;
-            display: none;
             position: absolute;
+            width: 100vw;
+            background-color: lightgray;
+            text-align: center;
+            height: 0px;
             z-index: 1;
+            transition: all 0.5s;
+            overflow: hidden;
+
+        }
+
+        #search-bg input {
+            width: 70%;
+            margin-top: 10px;
+            height: 30px;
+            background-color: transparent;
+            font-size: 1.2rem;
+            border-width: 0 0 1px;
+        }
+
+        #search-bg input:focus {
+            outline: none;
+
         }
 
         #search-bg.toggle {
-            display: block;
+            height: 100px;
+            transition: all 0.2s;
         }
     </style>
 
 
-    <div style="background-color: gray;">
+    <div class="navTop">
         <button id="btn"> 버튼 </button>
     </div>
-    <div id="search-bg" style="background-color: gray;"> <input type="search"> </div>
+    <div id="search-bg"> <input type="search" placeholder="search"> </div>
     <div> 메인 </div>
 </body>
 
