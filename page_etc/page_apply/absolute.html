@@ -11,13 +11,19 @@
 
 <body>
     <script>
-        window.addEventListener('DOMContentLoaded', event => {
-            const toggle = document.body.querySelector('#btn');
-            if (toggle) {
-                toggle.addEventListener('click', event => {
-                    $("#search-bg").toggleClass("toggle");
-                });
-            }
+        // window.addEventListener('DOMContentLoaded', event => {
+        //     const toggle = document.body.querySelector('#btn');
+        //     if (toggle) {
+        //         toggle.addEventListener('click', event => {
+        //             $("#search-bg").toggleClass("toggle");
+        //         });
+        //     }
+        // });
+
+        $(document).ready(() => {
+            $('#btn').click(() => {
+                $('#search-bg').toggleClass('toggle');
+            });
         });
     </script>
     <style>
