@@ -23,15 +23,15 @@
     <script>
         $(document).ready(function () {
             $("#btn-like").click(function () {
-                let CntLike = $('.like');
-                if (!CntLike.hasClass("bi-heart")) {
+                let ChkLike = $('.like');
+                if (!ChkLike.hasClass("bi-heart")) {
                     /* 빈 하트 */
-                    CntLike.removeClass("bi-heart-fill");
-                    CntLike.addClass("bi-heart");
+                    ChkLike.removeClass("bi-heart-fill");
+                    ChkLike.addClass("bi-heart");
                 } else {
                     /* 채운 하트 */
-                    CntLike.addClass("bi-heart-fill");
-                    CntLike.removeClass("bi-heart");
+                    ChkLike.addClass("bi-heart-fill");
+                    ChkLike.removeClass("bi-heart");
                 };
             });
         });
