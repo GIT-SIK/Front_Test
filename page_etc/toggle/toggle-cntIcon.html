@@ -22,16 +22,28 @@
     </style>
     <script>
         $(document).ready(function () {
+            /* 초기값 */
+            let cnt = 0;
+            cntLike.text(cnt);
+            /* 하트 수 */
+            let cntLike = $('.cntLike');
+
+            /* 하트 */
+            let chkLike = $('.like');
+
             $("#btn-like").click(function () {
-                let ChkLike = $('.like');
-                if (!ChkLike.hasClass("bi-heart")) {
-                    /* 빈 하트 */
-                    ChkLike.removeClass("bi-heart-fill");
-                    ChkLike.addClass("bi-heart");
+                if (!chkLike.hasClass("bi-heart")) {
+                    /* 채운 하트 -> 빈 하트*/
+                    if (cnt > 0) {
+                        cntLike.text(--cnt);
+                    }
+                    chkLike.removeClass("bi-heart-fill");
+                    chkLike.addClass("bi-heart");
                 } else {
-                    /* 채운 하트 */
-                    ChkLike.addClass("bi-heart-fill");
-                    ChkLike.removeClass("bi-heart");
+                    /* 빈 하트 -> 채운 하트*/
+                    cntLike.text(++cnt);
+                    chkLike.addClass("bi-heart-fill");
+                    chkLike.removeClass("bi-heart");
                 };
             });
         });
@@ -39,6 +51,7 @@
 
     <div id="btn-like">
         <i class="like bi bi-heart"></i>
+        <span class="cntLike"> </span>
     </div>
 
 </body>
